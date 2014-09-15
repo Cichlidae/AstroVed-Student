@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <!-- Database connection settings -->
+  <property name="show_sql">true</property>
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+  
+  <mapping class="ru.premaservices.astroved.student.pojo.City"/>
+  <mapping class="ru.premaservices.astroved.student.pojo.Country"/>
+  <mapping class="ru.premaservices.astroved.student.pojo.Diploma"/>
+  <mapping class="ru.premaservices.astroved.student.pojo.Group"/>
+  <mapping class="ru.premaservices.astroved.student.pojo.Note"/>
+  <mapping class="ru.premaservices.astroved.student.pojo.History"/>
+  <mapping class="ru.premaservices.astroved.student.pojo.Payment"/>
+  <mapping class="ru.premaservices.astroved.student.pojo.Session"/>
+  <mapping class="ru.premaservices.astroved.student.pojo.Student"/>
+  <mapping class="ru.premaservices.astroved.student.pojo.TestData"/>
+  <mapping class="ru.premaservices.astroved.student.pojo.User"/>
+  
+ </session-factory>
+</hibernate-configuration>
